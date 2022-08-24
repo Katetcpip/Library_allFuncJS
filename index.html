@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Books</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+        <button class="button" onclick="openForm()">Add a new book...</button>
+
+    </div>
+
+    <div id="hidden" class="js-form hidden">
+        <div>
+            <p class="authors"> Title</p>
+            <input class="input" id="title" />
+        </div>
+
+        <div>
+            <p class="authors"> Authors</p>
+            <input class="input" id="authors" />
+        </div>
+
+        <div>
+            <p class="authors"> Year</p>
+            <input class="input" id="year" />
+        </div>
+
+        <div>
+            <p class="authors"> Image link</p>
+            <input class="input" id="link" />
+        </div>
+
+        <button class="button buttonConfirm" onclick="addBook()">Confirm</button>
+    </div>
+
+    <div id="container" class="container">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
