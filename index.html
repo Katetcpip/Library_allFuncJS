@@ -17,37 +17,71 @@
 <body>
 
     <div class="header">
-        <button class="button" onclick="openForm()">Add a new book...</button>
+        <button class="button" id="open-modal-button"> a new book...</button>
 
     </div>
 
-    <div id="hidden" class="js-form hidden">
-        <div>
-            <p class="authors"> Title</p>
-            <input class="input" id="title" />
-        </div>
+    <div id="add-modal" class="add-modal">
+        <div class="add-modal-content">
+            <div class="inner_form">
+                <p class="authors"> Title</p>
+                <input class="input" id="title" />
+            </div>
 
-        <div>
-            <p class="authors"> Authors</p>
-            <input class="input" id="authors" />
-        </div>
+            <div class="inner_form">
+                <p class="authors"> Authors</p>
+                <input class="input" id="authors" />
+            </div>
 
-        <div>
-            <p class="authors"> Year</p>
-            <input class="input" id="year" />
-        </div>
+            <div class="inner_form">
+                <p class="authors"> Year</p>
+                <input class="input" id="year" />
+            </div>
 
-        <div>
-            <p class="authors"> Image link</p>
-            <input class="input" id="link" />
+            <div class="inner_form">
+                <p class="authors"> Image link</p>
+                <input class="input" id="link" />
+            </div>
+            <div class="forButtons">
+                <button class="button buttonConfirm buttonMain" id="close-modal-button">Close</button>
+                <button class="button buttonConfirm buttonMain" id="add-student-button">Add</button>
+            </div>
         </div>
-
-        <button class="button buttonConfirm" onclick="addBook()">Confirm</button>
     </div>
+
+
+    <div id="change-modal" class="add-modal">
+        <div class="add-modal-content">
+            <div class="inner_form">
+                <p class="authors"> Title</p>
+                <input class="input" id="title2" />
+            </div>
+
+            <div class="inner_form">
+                <p class="authors"> Authors</p>
+                <input class="input" id="authors2" />
+            </div>
+
+            <div class="inner_form">
+                <p class="authors"> Year</p>
+                <input class="input" id="year2" />
+            </div>
+
+            <div class="inner_form">
+                <p class="authors"> Image link</p>
+                <input class="input" id="link2" />
+            </div>
+            <div class="forButtons">
+                <button class="button buttonConfirm buttonMain" id="close-change-button">Close</button>
+                <button class="button buttonConfirm buttonMain" id="newBook-button">Save</button>
+            </div>
+        </div>
+    </div>
+
 
     <div id="container" class="container">
     </div>
-    <script src="script.js"></script>
+    <script src="script.js "></script>
 </body>
 
 </html>
